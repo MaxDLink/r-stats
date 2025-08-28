@@ -30,3 +30,20 @@ C.I.2 = phat+zstar*sqrt(phat*(1-phat)/n)
 # success number, sample size, correct = False 
 prop = prop.test(1063, 2054, correct = FALSE)
 
+# x + 2 = 8 + 2 = 10 
+# n + 4 = 20 + 4 = 24 
+# know the c.i. is 90% 
+propplusfour = prop.test(10, 24, conf.level = 0.9, correct = FALSE)
+
+# determine the sample size needed to estimate p to within 0.04 with 99% confidence 
+
+
+# .005 in each tail, use .995 
+zstar = qnorm(.995) # to get Z*
+
+# m = .04 
+
+# p-star = .5 # pulled because we know that it is the most conservative value 
+
+# sample size needed 
+samplesize = (2.576/.04)^2*.5*.5 # round to 1037 
