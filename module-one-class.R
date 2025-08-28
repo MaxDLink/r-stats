@@ -26,3 +26,7 @@ C.I. = phat-zstar*sqrt(phat*(1-phat)/n)
 # can also do 
 C.I.2 = phat+zstar*sqrt(phat*(1-phat)/n)
 
+# easy way to do a C.I in R, not long hand 
+# success number, sample size, correct = False 
+prop = prop.test(1063, 2054, correct = FALSE)
+
