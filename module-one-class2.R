@@ -56,5 +56,15 @@ z = sqrt(0.95238)
 
 # fail to reject here because negative: .1646 - .6666 = negative so fail to reject 
 
+# Example 6.1 
+
+# differs from (not equal to)
+
+# always define what p represents 
+# where p = prop. of rest. employees who say work stress .....
+
+# HW 1.2 must write like this... math editor in canvas 
+
+
 
 

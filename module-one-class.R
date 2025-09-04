@@ -18,8 +18,10 @@ n=2054
 # zstar 
 zstar=qnorm(.975)
 
-# calculate the 95% large-sample CI using formula 
+# module 1 slide 19 --> Formula sample size for desired margin of error with 
+# one prop.  
 
+# calculate the 95% large-sample CI using formula 
 # formula for C.I. 
 C.I. = phat-zstar*sqrt(phat*(1-phat)/n)
 

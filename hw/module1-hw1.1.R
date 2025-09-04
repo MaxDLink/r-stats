@@ -8,14 +8,13 @@ p_hat = 462/1003
 # N >= 10n 
 n = 1003
 # TODO: What is N????? Assuming 10x larger than n because our population is all adults in world 
-## if(N >= 10n)
-## {
-  ## print("We have independence!")
-## }
-## if else
-## {
-  ## print("No independence")
-## }
+if(N >= 10*n)
+{
+  print("We have independence!")
+}else
+{
+  print("No independence")
+}
 
 
 # normality 
@@ -47,6 +46,7 @@ z_star = qnorm(p_zs)
 
 # MOE 
 MOE_simple = z_star*SE_p_hat
+# sqrt((.5*(1-.5))/n)) SE -> p_hat*(1-p_hat) ....
 MOE = z_star*(sqrt((.5*(1-.5))/n))
 
 #Lower & upper bounds of large sample C.I. 
